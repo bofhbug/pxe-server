@@ -16,6 +16,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         mkdir downloads
+    steps:
       uses: wei/wget@v1
     - name: wget Dependencies
       with:
