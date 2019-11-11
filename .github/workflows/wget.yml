@@ -11,13 +11,15 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-        mkdir downloads
-    steps:
-      uses: wei/wget@v1
+    #- name: Run a multi-line script
+      #run: |
+        #echo Add other actions to build,
+        #echo test, and deploy your project.
+    - name: mkdir downloads
+      run: mkdir downloads
+
     - name: wget Dependencies
+      uses: wei/wget@v1
       with:
         args: -O downloads/kernels.tar.gz https://cloud.3mdeb.com/index.php/s/UQQVYrNIhg7ddwj/download
+        
