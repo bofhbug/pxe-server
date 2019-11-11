@@ -22,4 +22,7 @@ jobs:
       uses: wei/wget@v1
       with:
         args: -O downloads/kernels.tar.gz https://cloud.3mdeb.com/index.php/s/UQQVYrNIhg7ddwj/download
-        
+    - uses: actions/upload-artifact@master
+      with:
+        name: my-artifact
+        path: downloads
