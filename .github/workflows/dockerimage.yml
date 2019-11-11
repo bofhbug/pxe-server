@@ -13,7 +13,7 @@ jobs:
       - name: download Dependencies
       - run: mkdir -p downloads
       - name: wgetDependencies
-      uses: wei/wget@v1
+      - uses: wei/wget@v1
       with:
         args: -O downloads/kernels.tar.gz https://cloud.3mdeb.com/index.php/s/UQQVYrNIhg7ddwj/download
       #- run: wget https://cloud.3mdeb.com/index.php/s/UQQVYrNIhg7ddwj/download -O downloads/kernels.tar.gz
