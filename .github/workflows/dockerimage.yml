@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: download Dependencies
          uses: actions/checkout@v1
-         run: mkdir -p downloads
-      -name: wgetDependencies
+      - name: wget Dependencies
       uses: wei/wget@v1
       with:
         args: -O downloads/kernels.tar.gz https://cloud.3mdeb.com/index.php/s/UQQVYrNIhg7ddwj/download
