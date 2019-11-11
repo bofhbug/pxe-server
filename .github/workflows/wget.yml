@@ -16,7 +16,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         mkdir downloads
-      - name: wget Dependencies
       uses: wei/wget@v1
+    name: wget Dependencies
       with:
         args: -O downloads/kernels.tar.gz https://cloud.3mdeb.com/index.php/s/UQQVYrNIhg7ddwj/download
