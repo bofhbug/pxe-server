@@ -1,6 +1,6 @@
 name: CI wget
 
-on: [milestone]
+on: [push]
 
 jobs:
   build:
@@ -48,6 +48,7 @@ jobs:
       with:
         files: |
           downloads/*
-      env:
+        prerelease: true
+      env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
